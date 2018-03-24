@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="Max">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,63 +9,46 @@
     <link href="fonts/material-icons.css" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="css/maxtraining.css">
+    <link rel="stylesheet" href="css/maxtrainisng.css">
 </head>
-<body ng-controller="MainCtrl as ctrl">
+<body>
+    <!--    Barra de navegação  -->
     <nav>
-        <div class="nav-wrapper N/A transparent">
+        <div class="nav-wrapper black">
             <div class="container">
                 <a href="#" class="brand-logo">Logo</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>                
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">JavaScript</a></li>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
                 <!-- Botão de collapse -->
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
+                    <li><a href="#/">Início</a></li>
+                    <li><a href="#/planos">Planos</a></li>
+                    <li><a href="#/contato">Contato</a></li>                    
                 </ul>                
             </div>
         </div>
     </nav>
-    <section class="max-apresentacao">
-        <div class="container">
-
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/bg1.jpg">
         </div>
-    </section>
-
-    <section class="max-detalhes">
-        <div class="container">
-
+      </div>
+      <div class="section white">
+        <div class="row container">
+          <!-- Cartões -->
         </div>
-    </section>
-
-    <section class="max-inscrevase">
-        <div class="container">
-
-        </div>
-    </section>
-
-    <section class="max-download-app">
-        <div class="containe">
-
-        </div>
-    </section>
-
-    <footer class="max-rodape">
-        <div class="container">
-            
-        </div>
-    </footer>
+      </div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/bg2.jpg"></div>
+      </div>
+          
 </body>
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/maxtraining.jquery.js"></script>
-<script type="text/javascript" src="js/angular.1.6.9.min.js"></script>
-<script type="text/javascript" src="js/max.js"></script>
 </html>
