@@ -1,6 +1,8 @@
 // Jquery
 
-$(".button-collapse").sideNav();
+$(".button-collapse").sideNav({
+    draggable: true,
+});
 
 // carousel
 $('.carousel.carousel-slider').carousel({
