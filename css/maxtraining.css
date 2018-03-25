@@ -1,29 +1,3 @@
-.max-apresentacao {
-    background: black;
-    height: 667px;
-    width: 100%;
-    margin-top: -70px
-}
-
-.max-inscrevase {
-    width: 100%;
-    height: 600px;
-    background: green;
-}
-
-.max-detalhes {
-    width: 100%;
-    height: 600px;
-}       
-
-.max-download-app {
-    width: 100%;
-    height: 400px;
-    background: blue;
-}
-
-.max-rodape {
-    background: gold;
-    height: 300px;
-    width: 100%;
+.parallax-container {
+    height: 500px;
 }
