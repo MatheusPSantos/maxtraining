@@ -984,3 +984,117 @@ img {
   background-image: url("../img/bg-contato.png");
   background-size: cover;
   background-position: center; }
+  .max_contato h2 {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    margin-top: 60px;
+    text-transform: uppercase; }
+  .max_contato p {
+    margin-top: 40px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase; }
+  .max_contato i {
+    color: #00b51e;
+    font-style: normal; }
+  .max_contato .max-formulario {
+    width: 100%;
+    margin-top: 70px; }
+    .max_contato .max-formulario label {
+      color: #fff;
+      font-size: 18px; }
+    .max_contato .max-formulario input {
+      width: 100%;
+      margin: 10px 0 10px 0;
+      background-color: transparent;
+      border: solid 2px #00b51e;
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+      font-family: 'Unica One'; }
+    .max_contato .max-formulario ::-webkit-input-placeholder {
+      color: #00b51e; }
+    .max_contato .max-formulario textarea {
+      width: 335px;
+      height: 100px;
+      margin: 0 0 10px 0;
+      background-color: transparent;
+      border: solid 2px #00b51e;
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+      font-family: 'Unica One'; }
+    .max_contato .max-formulario button {
+      width: 100%;
+      background-color: transparent;
+      border: solid 2px #00b51e;
+      color: #fff;
+      font-size: 18px;
+      font-family: 'Unica One';
+      cursor: pointer;
+      transition: all ease-in-out 0.4s;
+      padding: 5px; }
+    .max_contato .max-formulario button:hover {
+      background-color: #00b51e; }
+  .max_contato .redes-sociais {
+    width: 100%;
+    margin-top: 70px; }
+    .max_contato .redes-sociais h3 {
+      font-size: 16pt;
+      font-weight: 500;
+      color: #fff;
+      text-align: left;
+      border-bottom: solid 2px #fff; }
+    .max_contato .redes-sociais ul {
+      margin-top: 20px; }
+      .max_contato .redes-sociais ul li {
+        display: inline-block;
+        margin-right: 20px; }
+  .max_contato .funcionamento {
+    width: 100%;
+    margin-top: 20px; }
+    .max_contato .funcionamento h3 {
+      color: #Fff;
+      font-size: 16pt;
+      font-weight: 500;
+      text-align: left;
+      border-bottom: solid 2px #fff; }
+    .max_contato .funcionamento p {
+      font-size: 15pt;
+      margin-top: 5px;
+      text-align: left;
+      color: #00b51e; }
+      .max_contato .funcionamento p span {
+        color: #fff; }
+  .max_contato .contato {
+    width: 100%;
+    margin-top: 70px; }
+    .max_contato .contato h3 {
+      color: #fff;
+      font-size: 16pt;
+      font-weight: 500;
+      text-align: left;
+      border-bottom: solid 2px #fff; }
+    .max_contato .contato p {
+      font-size: 13pt;
+      text-align: left;
+      margin-top: 10px;
+      color: #00b51e; }
+  .max_contato .nossa-casa {
+    width: 100%;
+    margin-top: 20px; }
+    .max_contato .nossa-casa h3 {
+      color: #fff;
+      font-size: 16pt;
+      font-weight: 500;
+      text-align: left;
+      border-bottom: solid 2px #fff; }
+    .max_contato .nossa-casa p {
+      font-size: 15pt;
+      color: #00b51e;
+      text-align: left;
+      margin-top: 10px; }
