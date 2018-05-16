@@ -612,7 +612,7 @@ img {
       color: #fff;
       text-decoration: none;
       text-transform: uppercase;
-      font-size: 20px;
+      font-size: 24px;
       transition: all ease-in-out 0.2s; }
     .header_menu ul li a:hover {
       color: #00b51e; }
@@ -657,7 +657,7 @@ img {
     margin: 10px; }
   .max_inicio p {
     margin: 10px;
-    font-size: 20px;
+    font-size: 24px;
     color: #fff; }
 
 /* SOBRE
@@ -681,7 +681,7 @@ img {
   .max_sobre #max_sobre_boxes {
     margin-top: 120px;
     color: #00b51e;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     padding-left: 20px; }
     .max_sobre #max_sobre_boxes .sobre_boxes {
@@ -697,7 +697,7 @@ img {
         font-size: 24px;
         margin-top: 20px; }
       .max_sobre #max_sobre_boxes .sobre_boxes .box_texto {
-        font-size: 16px;
+        font-size: 18px;
         margin-top: 20px;
         color: #fff; }
 
@@ -717,7 +717,7 @@ img {
     background-position: center; }
     .max_vmv #visao h3 {
       font-size: 28px;
-      color: #00b51e;
+      color: #fff;
       text-align: center;
       font-weight: 500;
       margin-top: 60px; }
@@ -741,7 +741,7 @@ img {
     background-position: center; }
     .max_vmv #missao h3 {
       font-size: 28px;
-      color: #00b51e;
+      color: #fff;
       text-align: center;
       font-weight: 500;
       margin-top: 60px; }
@@ -765,7 +765,7 @@ img {
     background-position: center; }
     .max_vmv #valores h3 {
       font-size: 28px;
-      color: #00b51e;
+      color: #fff;
       text-align: center;
       font-weight: 500;
       margin-top: 60px; }
@@ -859,3 +859,128 @@ img {
   height: 1700px;
   background-image: url("../img/bg-modalidades.png");
   background-size: cover; }
+  .max_modalidades i {
+    color: #fff;
+    font-style: normal; }
+  .max_modalidades h2 {
+    margin-top: 60px;
+    font-size: 28px;
+    color: #00b51e;
+    text-align: center;
+    font-weight: 500; }
+  .max_modalidades p {
+    font-weight: 500;
+    font-size: 24px;
+    color: #00b51e;
+    text-align: center;
+    margin-top: 80px;
+    text-transform: uppercase; }
+  .max_modalidades .max_modalidades-boxs {
+    width: 100%;
+    height: 300px;
+    margin: 40px 0 40px 0; }
+    .max_modalidades .max_modalidades-boxs .img-background {
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0; }
+      .max_modalidades .max_modalidades-boxs .img-background img {
+        width: 100%; }
+      .max_modalidades .max_modalidades-boxs .img-background figcaption {
+        width: 100%;
+        height: 300px;
+        margin-top: -300px; }
+        .max_modalidades .max_modalidades-boxs .img-background figcaption h3 {
+          font-size: 28px;
+          font-weight: 500;
+          color: #fff;
+          text-align: center;
+          margin-top: 40px;
+          text-transform: uppercase; }
+        .max_modalidades .max_modalidades-boxs .img-background figcaption p {
+          font-size: 24px;
+          text-align: center;
+          color: #000;
+          text-transform: uppercase;
+          width: 480px;
+          margin: 40px 240px 0 240px; }
+
+/*
+*   PLANOS MAX
+*/
+.max_planos {
+  width: 100%;
+  height: 600px;
+  background-image: url("../img/bg-planos.png");
+  background-position: center;
+  background-size: cover; }
+  .max_planos h2 {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 60px;
+    color: #fff; }
+  .max_planos .max_planos-lista {
+    list-style: none;
+    margin-left: 30px; }
+    .max_planos .max_planos-lista .plano {
+      height: 400px;
+      margin-top: 80px; }
+      .max_planos .max_planos-lista .plano h3 {
+        color: #fff;
+        text-align: center;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 24pt;
+        margin-top: 40px; }
+      .max_planos .max_planos-lista .plano .content .num {
+        font-weight: 500;
+        color: #fff;
+        font-size: 72pt;
+        margin-left: 100px; }
+      .max_planos .max_planos-lista .plano .content .text {
+        color: #fff;
+        font-size: 13pt;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: -20px; }
+      .max_planos .max_planos-lista .plano .content .list {
+        color: #fff;
+        font-size: 15pt;
+        text-align: justify;
+        margin-left: 60px;
+        margin-top: 30px; }
+      .max_planos .max_planos-lista .plano .planos-btn {
+        margin: 40px 60px 0 60px;
+        width: 150px;
+        border: solid 2px #fff;
+        background: transparent;
+        color: #fff;
+        padding: 10px 5px;
+        transition: all ease-in-out 0.4s; }
+      .max_planos .max_planos-lista .plano .planos-btn:hover {
+        cursor: pointer;
+        background: #00b51e; }
+    .max_planos .max_planos-lista #cross-max {
+      background-image: url("../img/planos-cross-max.png");
+      background-position: center;
+      background-size: cover; }
+    .max_planos .max_planos-lista #compartilhado {
+      background-image: url("../img/planos-profissional-compartilhado.png");
+      background-position: center;
+      background-size: cover; }
+    .max_planos .max_planos-lista #premium {
+      background-image: url("../img/planos-premium.png");
+      background-position: center;
+      background-size: cover; }
+
+/*
+*   CONTATO
+*/
+.max_contato {
+  width: 100%;
+  height: 600px;
+  background-image: url("../img/bg-contato.png");
+  background-size: cover;
+  background-position: center; }
