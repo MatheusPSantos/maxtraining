@@ -12,6 +12,7 @@
         <title>MAXTraining - CT | Página Inicial</title>
         <!-- Css com a estilização do site -->
         <link rel="stylesheet" href="css/maxtraining.css"/>
+        <link rel="stylesheet" href="fonts/icon.css">
 
     </head>
     <body>
@@ -328,8 +329,82 @@
         <section class="max_contato" id="fale-conosco">
             <div class="container_16">
                 <h2>Entre em contato conosco</h2>
+                <p class="grid_8 prefix_4 suffix_4">
+                    Venha nos fazer uma visita e conhecer nossa <i>estrutura</i> e nossos <i>excelentes profissionais</i>
+                </p>
+                <div class="clear"></div>
+                <!-- Formulario de contato -->
+                <div class="grid_6">
+                    <form action="form.php" method="POST" class="max-formulario">
+                        <div class="clear"></div>
+                        <input required id="form_name" name="form_name" type="text" placeholder="nome completo">
+                        
+                        <div class="clear"></div>
+
+                        <input required id="form_email" name="form_email" type="email" placeholder="seu e-mail">
+
+                        <div class="clear"></div>
+
+                        <textarea required name="form_text" id="form_text" cols="30" rows="10" placeholder="Deixe sua Mensagem"></textarea>
+
+                        <button>Enviar Mensagem >>></button>
+                    </form>
+                </div>
+                <!-- fim do fomulario de contato-->
+                
+                <!-- redes sociais e funcionamento-->
+                <div class="prefix_2 grid_3">
+                    <div class="redes-sociais">
+                        <h3>Redes Sociais</h3>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/MaxTraining-459912497707099/" target="_blank">
+                                    <img src="img/facebook.png" alt="facebook da maxtraining">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/maxtrainingpicos/" target="_blank">
+                                    <img src="img/instagram.png" alt="insta da maxtraining">
+                                </a>
+                            </li>
+                        </ul>                        
+                    </div>
+
+                    <div class="funcionamento">
+                        <h3>Funcionamento</h3>
+                        <p>
+                            Segunda - Sexta
+                            <br>
+                            6h - 22h
+                            <br>
+                            <span id="horario-max">#</span>
+                        </p>
+                        
+                    </div>
+                </div>
+                <!-- fim de redes sociais e funcioamento -->
+                <!-- Contatos e endereço fisico-->
+                <div class="prefix_1 grid_3">
+                    <div class="contato">
+                        <h3>Contatos</h3>
+                        <p>+55 (89) 99934-0404</p>
+                        <p>+55 (89) 98804-9561</p>
+                    </div>
+
+                    <div class="nossa-casa">
+                        <h3>Nossa Casa!</h3>
+                        <p>Rua Benedito Portela,
+                        560. Picos-PI</p>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <footer class="max_footer">
+            <div class="container_16">
+                
+            </div>
+        </footer>
     </body>
     <!-- jquery -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
