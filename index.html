@@ -12,20 +12,23 @@
         <title>MAXTraining - CT | Página Inicial</title>
         <!-- Css com a estilização do site -->
         <link rel="stylesheet" href="css/maxtraining.css"/>
+        <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="fonts/icon.css">
 
     </head>
     <body>
         <!-- Barra de Navegação Topo-->
-        <header class="header">
+        <header class="header animated fadeInDown">
             <div class="container_16">
                 <div class="grid_3">
                     <a href="index.html">
-                        <img src="img/logo-alternativo.svg" alt="Maxtraining, centro de treinamento referência.">
+                        <img id="header-logo" src="img/logo-alternativo.svg" alt="Maxtraining, centro de treinamento referência.">
                     </a>
                 </div>
-                <label for="toogle">&#9776;</label>
-                <input type="checkbox" id="toogle">
+                <input type="checkbox" id="toggle" name="toggle">
+                <label for="toggle" id="label-menu">&#9776;</label>
+                <label for="toggle" id="label-menu-out">X</label>
+
                 <div class="grid_3">&nbsp;</div>
                 <nav class="grid_10 header_menu">
                     <ul>
@@ -61,31 +64,31 @@
             <div class="container_16">
                 <div class="clear"></div>
                 <div id="max_sobre_texto">
-                    <h2>MAIS <i>QUE UM CENTRO ESPORTIVO DE </i>REFERÊNCIA,</br><i>SOMOS UMA</i> FAMÍLIA</h2>
+                    <h2 class="animated fadeInDown">MAIS <i>QUE UM CENTRO ESPORTIVO DE </i>REFERÊNCIA,</br><i>SOMOS UMA</i> FAMÍLIA</h2>
                 </div>
                 <div class="clear"></div>
                 <div class="grid_16" id="max_sobre_boxes">
-                    <div class="grid_5 sobre_boxes">
+                    <div class="grid_5 sobre_boxes animated fadeInLeft">
                         <img src="img/avaliacao-funcional.svg" alt="">
                         <p>Avaliação Funcional</p>
                         <div class="box_texto">
-                            Lorem ipsum dolor sit amet, consectetur.
+                            Fazemos uma Avaliação Completa com o objetivo de encaminhar o melhor treinamento à você.
                         </div>                        
                     </div>
 
-                    <div class="grid_5 sobre_boxes">
+                    <div class="grid_5 sobre_boxes animated fadeInDown">
                         <img src="img/equipe-qualificada.svg" alt="">
                         <p>Equipe qualificada</p>
                         <div class="box_texto">
-                            Lorem ipsum dolor sit amet, consectetur.
+                            Profissionais qualificados, dedicados e capacitados para prestar o melhor serviço.
                         </div>
                     </div>
 
-                    <div class="grid_5 sobre_boxes">
+                    <div class="grid_5 sobre_boxes animated fadeInRight">
                         <img src="img/planos-sob-medida.svg" alt="">
                         <p>Planos sob medida</p>
                         <div class="box_texto">
-                            Lorem ipsum dolor sit amet, consectetur.
+                            A MaxTraining possui os melhores Planos. O custo-benefício do nosso serviço vai lhe surpreender!
                         </div>                        
                     </div>
 
@@ -140,14 +143,14 @@
         </section>
 
         <!-- Seção do aluno -->
-        <section class="max_alunos">
+        <section class="max_alunos" id="max_alunos">
             <div class="container_16">
                 <div class="clear"></div>
                 <div class="grid_16">
-                    <h2>ÁREA DO ALUNO MAX</h2>
+                    <h2 class="animated fadeInDown">ÁREA DO ALUNO MAX</h2>
                 </div>
                 <div class="clear"></div>
-                <div class="grid_8">
+                <div class="grid_7">
                     <p class="max_aluno-texto">
                             <i>SEJA UM</i> ALUNO DA MAXTRAINING!
                     </br>
@@ -179,7 +182,7 @@
                     <p>BAIXE O APP E OBTENHA ACESSO A UM AMBIENTE EXCLUSIVO!</p>
                 </div>
                 <div class="max_app grid_4 prefix_7 sufix_7">
-                    <a href="#">
+                    <a href="#max_alunos" onclick="chamarAlerta()">
                         <img src="img/tecnofit-app.png" alt="">
                     </a>
                 </div>
@@ -191,17 +194,17 @@
             <div class="container_16">
                 <div class="clear"></div>
                 <div class="grid_16">
-                    <h2>NOSSAS MODALIDADES</h2>
+                    <h2 class="animated fadeInDown">NOSSAS MODALIDADES</h2>
                 </div>
                 <div class="clear"></div>
-                <div class="grid_16">
+                <div class="grid_15">
                     <p>Na <i>MAX</i> você encontra o que há de <i>melhor</i>
                         em treinamento <i>personalizado</i></p>
                 </div>
                 <div class="clear"></div>
                 <div class="container_16">
                     <div class="max_modalidades-boxs">
-                        <figure class="img-background">
+                        <figure class="img-background animated fadeInDown">
                             <img src="img/modalidade-1.png" alt="">
                             <figcaption>
                                 <h3>-MAX RUN-
@@ -214,7 +217,7 @@
                         </figure>
                     </div>
                     <div class="max_modalidades-boxs">
-                        <figure class="img-background">
+                        <figure class="img-background animated fadeInDown">
                             <img src="img/modalidade-2.png" alt="">
                             <figcaption>
                                 <h3>-CROSSMAX-
@@ -227,7 +230,7 @@
                         </figure>
                     </div>
                     <div class="max_modalidades-boxs">
-                        <figure class="img-background">
+                        <figure class="img-background animated fadeInDown">
                             <img src="img/modalidade-3.png" alt="">
                             <figcaption>
                                 <h3>PERSONAL PREMIUM</h3>
@@ -238,7 +241,7 @@
                         </figure>
                     </div>
                     <div class="max_modalidades-boxs">
-                        <figure class="img-background">
+                        <figure class="img-background animated fadeInDown">
                             <img src="img/modalidade-4.png" alt="">
                             <figcaption>
                                 <h3>PERSONAL COMPARTILHADO</h3>
@@ -257,7 +260,7 @@
         <section class="max_planos" id="nossos-planos">
             <div class="container_16">
                 <div class="clear"></div>
-                <h2 class="grid_16">NOSSOS PLANOS</h2>
+                <h2 class="animated fadeInDown">NOSSOS PLANOS</h2>
                 <div class="clear"></div>
                 <!-- Caixas com os planos -->
                 <ul class="max_planos-lista">
@@ -275,7 +278,7 @@
                                 <li>- Personal Trainer</li>
                             </ul>
                         </div>
-                        <form action="https://google.com">
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSd0KEGyKrLHB7mexFdvC40RfdB4-Bxud8uSpc6SQTPsRopdTw/viewform">
                             <button class="planos-btn">
                                 INSCREVER-SE
                             </button>
@@ -295,7 +298,7 @@
                                 <li>- Personal Trainer</li>
                             </ul>                         
                         </div>
-                        <form action="https://google.com">
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSd0KEGyKrLHB7mexFdvC40RfdB4-Bxud8uSpc6SQTPsRopdTw/viewform">
                             <button class="planos-btn">
                                 INSCREVER-SE
                             </button>
@@ -313,13 +316,13 @@
                             <ul class="list">
                                 <li>- Avaliação</li>
                                 <li>- Personal Trainer</li>
-                            </ul>
-                            <form action="https://google.com">
-                                <button class="planos-btn">
-                                    INSCREVER-SE
-                                </button>
-                            </form>                  
-                        </div>                        
+                            </ul>              
+                        </div>   
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSd0KEGyKrLHB7mexFdvC40RfdB4-Bxud8uSpc6SQTPsRopdTw/viewform">
+                            <button class="planos-btn">
+                                INSCREVER-SE
+                            </button>
+                        </form>                     
                     </li>
                 </ul>
             </div>
@@ -328,8 +331,8 @@
         <!-- Seção de contato -->
         <section class="max_contato" id="fale-conosco">
             <div class="container_16">
-                <h2>Entre em contato conosco</h2>
-                <p class="grid_8 prefix_4 suffix_4">
+                <h2 class="animated fadeInDown">Entre em contato conosco</h2>
+                <p class="grid_15">
                     Venha nos fazer uma visita e conhecer nossa <i>estrutura</i> e nossos <i>excelentes profissionais</i>
                 </p>
                 <div class="clear"></div>
@@ -353,8 +356,8 @@
                 <!-- fim do fomulario de contato-->
                 
                 <!-- redes sociais e funcionamento-->
-                <div class="prefix_2 grid_3">
-                    <div class="redes-sociais">
+                <div class="grid_3">
+                    <div class="redes-sociais funcionamento" id="gambi">
                         <h3>Redes Sociais</h3>
                         <ul>
                             <li>
@@ -384,7 +387,7 @@
                 </div>
                 <!-- fim de redes sociais e funcioamento -->
                 <!-- Contatos e endereço fisico-->
-                <div class="prefix_1 grid_3">
+                <div class="grid_3">
                     <div class="contato">
                         <h3>Contatos</h3>
                         <p>+55 (89) 99934-0404</p>
@@ -402,14 +405,15 @@
 
         <footer class="max_footer">
             <div class="container_16">
-                
+                <h4 class="grid_6">2018 - CT MAX TRAINING &copy;</h4>
             </div>
         </footer>
     </body>
     <!-- jquery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!-- materialize -->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Sweet Alert 2-->
+    <script type="text/javascript" src="js/sweetalert2.js"></script>
     <!-- Javascript da página -->
     <script type="text/javascript" src="js/maxtraining.js"></script>
+    
 </html>
