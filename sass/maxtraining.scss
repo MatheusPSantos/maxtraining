@@ -453,17 +453,12 @@ $verde-3: #e3f2e6;
 
 // lista com os icones do app
 .max_app {
-
-    img {
-        border: solid 2px #000;
-        padding: 10px;
-        margin: 10px 0 10px 0;
-        transition: all ease-in-out 0.4s;
-    }
-    img:hover {
-        border: solid 2px #fff;
-        background-color: #fff;
-    }
+    margin: 10px 0 0 0;
+    background: $verde-1;
+    color: #fff;
+    box-shadow: 2px 4px 4px rgba(0,0,0, 0.5);
+    padding: 15px 20px 5px 20px;
+    border: none;
 }
 
 
@@ -918,10 +913,12 @@ $verde-3: #e3f2e6;
     }
     //lista com icones do app
     .max_app {
-        img {
-            margin: 10px 0 10px 0;
-            margin-left: -100px;
-        }
+        margin: 20px 0 0 0;
+        color: #fff;
+        background: $verde-1;
+        border: none;
+        box-shadow: 2px 4px 4px rgba(0,0,0, 0.5);
+        padding: 15px 20px 5px 20px;
     }
 
     // modalidades max
@@ -1021,7 +1018,7 @@ $verde-3: #e3f2e6;
             background: $verde-2;
             top: 0px;
             transform: translateX(200%);
-            transition: transform ease-in-out 0.7s;  
+            //transition: transform ease-in-out 0.7s;  
             ul {
                 margin-top: -35px;
                 li {
@@ -1060,7 +1057,7 @@ $verde-3: #e3f2e6;
         height: 50px;
         width: 100%;
         position: fixed;
-        transition: all ease-in-out 0.4s;
+        //transition: all ease-in-out 0.4s;
         overflow:initial;
         z-index: 1;
     
@@ -1084,7 +1081,7 @@ $verde-3: #e3f2e6;
             text-align: right;
             display: none;
             transform: translateX(200%);
-            transition: transform ease-in-out 0.5s;
+            //transition: transform ease-in-out 0.5s;
             ul {
                 background: #fff;
                 margin-top: -30px;
@@ -1252,11 +1249,13 @@ $verde-3: #e3f2e6;
         }
 
         .max_app {
-            img {
-                width: 150px;
-                margin: 0 0 10px 75px;
-                padding: 5px 2px;
-            }
+            margin: 20px 0 0 0;
+            width: 100%;
+            background: $verde-1;
+            color: #fff;
+            border: none;
+            box-shadow: 2px 4px 4px rgba(0,0,0, 0.5);
+            padding: 10px 0 0 0;
         }
     }
 
