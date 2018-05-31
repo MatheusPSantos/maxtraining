@@ -59,8 +59,6 @@ $(document).ready(
                 document.getElementById("horario-max").innerHTML = "Estamos Fechado!";
             }
         }
-    
-        console.log(dia, hora);
     }
 );
 
@@ -79,4 +77,68 @@ function chamarAlerta() {
         '<a href="https://itunes.apple.com/br/app/tecnofit/id1109478634?mt=8"><img src="img/app-store.png"></a>'+
         '<a href="https://play.google.com/store/apps/details?id=br.com.tecnofit.mobileapp&hl=pt_BR"><img src="img/google-play.png"></a>'+'</p>',
     })
+}
+// alerta de email enviado
+function alertaEmail() {
+    swal({
+        title:"<h3>Seu E-mail enviado!</h3>",
+        html: '<p>Seu e-mail foi enviado com sucesso<br>'+
+        'entraremos em contato assim que pudermos.<br>Obrigado(a)!</p>'
+    })
+}
+
+ // Initialize Firebase
+var config = {
+    apiKey: "AIzaSyAOhEaQLKQJXRQM3paEItHnUgLYG9nfiFE",
+    authDomain: "maxtraining-contato.firebaseapp.com",
+    databaseURL: "https://maxtraining-contato.firebaseio.com",
+    projectId: "maxtraining-contato",
+    storageBucket: "maxtraining-contato.appspot.com",
+    messagingSenderId: "686899759897"
+};
+firebase.initializeApp(config);
+
+// Reference message collection
+var messagesRef = firebase.database().ref('messages');
+
+// listener para o formulario
+document.getElementById('maxContactForm').addEventListener('submit', submitForm);
+// função que envia email
+function submitForm(event) {
+    event.preventDefault();
+    // Pegando valores
+    var name = getInputValue('form_name');
+    var email = getInputValue('form_email');
+    var message = getInputValue('form_text');
+
+    // chamando a função de salvar mensagem
+    saveMessage(name, email, message);
+
+    // mostrar alerta
+    alertaEmail();
+
+    // limpar campos
+    limparInputs('form_name');
+    limparInputs('form_email');
+    limparInputs('form_text');
+}
+
+// função para pegar os valores
+function getInputValue(id){
+    return document.getElementById(id).value;
+}
+
+// função que limpa os campos do formulario
+function limparInputs(id){
+    document.getElementById(id).value = '';
+}
+
+// salvar menssagem no firebase
+function saveMessage(name, email, message) {
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+        name: name,
+        email: email,
+        message: message,
+    });
 }
